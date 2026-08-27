@@ -90,8 +90,8 @@ Use the following default credentials to log in and explore the different role d
 |---|---|---|
 | **Admin** | admin@parking.com | 1234 |
 | **Staff** | staff@parking.com | 1234 |
-| **Customer** | haa@mail.com | 1234 |
-| **Customer** | rudra@121.com | 1234 |
+| **Customer** | rudraasarkar017@gmail.com | 1234 |
+| **Customer** | udoy@mail.com | 1234 |
 | **Customer** | sidratul@tuli.com | 1234 |
 
 *(Note: You can also register a new customer account from the login page to test the real email verification system).*
