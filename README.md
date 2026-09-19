@@ -30,6 +30,7 @@ To run this project on your computer, you will need a local server environment l
 * Secure login with hashed passwords (bcrypt).
 * Role-based access: Admin, Staff, Customer (each with their own dashboard and route guards).
 * Customer self-registration.
+* Google Sign-In: customers can securely create an account or sign in using a verified Google account. New Google users are registered as customers, while existing users retain their assigned role.
 * Real email verification on signup (Gmail SMTP + PHPMailer, random 6-digit code).
 * Forgot password flow via email using the same email infrastructure.
 
@@ -90,11 +91,35 @@ Use the following default credentials to log in and explore the different role d
 |---|---|---|
 | **Admin** | admin@parking.com | 1234 |
 | **Staff** | staff@parking.com | 1234 |
-| **Customer** | rudraasarkar017@gmail.com | 1234 |
-| **Customer** | udoy@mail.com | 1234 |
+| **Customer** | haa@mail.com | 1234 |
+| **Customer** | rudra@121.com | 1234 |
 | **Customer** | sidratul@tuli.com | 1234 |
 
 *(Note: You can also register a new customer account from the login page to test the real email verification system).*
+
+---
+
+## 5. Google Sign-In Configuration
+
+This project supports Google Sign-In on the login and registration pages. It uses Google OAuth to verify a user's identity and email address. For security, the original Google OAuth credentials have been removed from the code. To enable Google Sign-In on your computer:
+
+1. Go to [Google Cloud Console](https://console.cloud.google.com/) and create or select a project.
+2. Configure the **OAuth consent screen** for the project.
+3. Go to **APIs & Services > Credentials**, click **Create Credentials**, then choose **OAuth client ID**.
+4. Select **Web application** and add this as an authorised redirect URI:
+   ```
+   http://localhost/parking_system/google_callback.php
+   ```
+5. Copy the Client ID and Client Secret created by Google.
+6. Open the project in your code editor and locate the local configuration file (e.g., `mail_config.php`).
+7. Replace the placeholder values with your own Client ID and Client Secret:
+   ```php
+   define('GOOGLE_CLIENT_ID', 'your_google_client_id');
+   define('GOOGLE_CLIENT_SECRET', 'your_google_client_secret');
+   ```
+8. Make sure PHP's cURL extension is enabled in XAMPP, then restart Apache.
+
+**Security note:** Never upload real Google OAuth credentials, Gmail/PHPMailer credentials, or other private configuration values to a public repository. Each developer or deployment must use its own credentials.
 
 
 
@@ -151,3 +176,4 @@ Use the following default credentials to log in and explore the different role d
 
 **Customer Dashboard (Alternate View)**
 ![Customer Dashboard 2](screenshots/customer-dashboard2.PNG)
+
