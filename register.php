@@ -42,6 +42,11 @@ include 'audit_log.php';
             <button type="submit">Create account</button>
         </form>
 
+        <div class="oauth-divider"><span>or</span></div>
+        <a class="google-signin" href="google_login.php">
+            <span class="google-g">G</span> Sign up with Google
+        </a>
+
         <p style="text-align:center;font-size:13px;color:#777;margin-top:1rem;">
             Already have an account? <a href="login.php">Sign in</a>
         </p>
@@ -49,3 +54,4 @@ include 'audit_log.php';
 </div>
 </body>
 </html>
+
