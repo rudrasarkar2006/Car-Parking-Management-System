@@ -176,4 +176,3 @@ This project supports Google Sign-In on the login and registration pages. It use
 
 **Customer Dashboard (Alternate View)**
 ![Customer Dashboard 2](screenshots/customer-dashboard2.PNG)
-

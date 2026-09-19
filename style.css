@@ -284,4 +284,3 @@ table tr:nth-child(even) { background-color: var(--table-row-alt); }
 .google-signin { display: flex; align-items: center; justify-content: center; gap: 10px; border: 1px solid var(--border-color); border-radius: 6px; padding: 10px 14px; color: var(--text-main); font-size: 14px; font-weight: 600; }
 .google-signin:hover { background: var(--table-row-alt); text-decoration: none; }
 .google-g { color: #4285f4; font-size: 18px; font-family: Arial, sans-serif; font-weight: 700; }
-

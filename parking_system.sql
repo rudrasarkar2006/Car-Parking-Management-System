@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 27, 2026 at 04:43 PM
+-- Generation Time: Sep 11, 2026 at 04:54 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -196,7 +196,8 @@ INSERT INTO `slot_requests` (`request_id`, `customer_id`, `slot_id`, `status`, `
 (11, 18, 1, 'approved', '2026-08-14 16:52:48', '2026-08-14 16:53:39'),
 (12, 6, 1, 'approved', '2026-08-27 11:20:43', '2026-08-27 11:21:11'),
 (13, 18, 7, 'rejected', '2026-08-27 11:25:06', '2026-08-27 14:40:18'),
-(14, 19, 3, 'approved', '2026-08-27 14:36:05', '2026-08-27 14:40:17');
+(14, 19, 3, 'approved', '2026-08-27 14:36:05', '2026-08-27 14:40:17'),
+(15, 6, 3, 'pending', '2026-08-27 16:44:01', NULL);
 
 -- --------------------------------------------------------
 
@@ -396,7 +397,7 @@ ALTER TABLE `payments`
 -- AUTO_INCREMENT for table `slot_requests`
 --
 ALTER TABLE `slot_requests`
-  MODIFY `request_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `request_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `users`
