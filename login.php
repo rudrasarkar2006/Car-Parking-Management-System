@@ -40,6 +40,11 @@ session_start();
             <button type="submit">Sign in</button>
         </form>
 
+        <div class="oauth-divider"><span>or</span></div>
+        <a class="google-signin" href="google_login.php">
+            <span class="google-g">G</span> Continue with Google
+        </a>
+
         <p style="text-align:center;font-size:13px;color:#777;margin-top:1rem;">
             New here? <a href="register.php">Create an account</a>
         </p>
@@ -63,3 +68,4 @@ session_start();
 </div>
 </body>
 </html>
+
